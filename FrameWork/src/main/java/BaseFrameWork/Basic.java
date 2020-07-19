@@ -31,15 +31,15 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Basic extends Extent {
 
-	public static String OR_Path = System.getProperty("user.dir") + "/src/main/java/FOTA/OR.properties";
-	public static String Input_Path = System.getProperty("user.dir") + "/src/main/java/FOTA/InputFile.properties";
+	public static String OR_Path = System.getProperty("user.dir") + "/src/main/java/BaseFrameWork/OR.properties";
+	public static String Input_Path = System.getProperty("user.dir") + "/src/main/java/BaseFrameWork/InputFile.properties";
 	public static WebDriver driver;
 
 	public static void chrome() {
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "/Dependencies/Driver/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://qa71.contus.us/services/SVEP4154/code/public/login");
+		driver.get("Project URL");
 		driver.manage().window().maximize();
 	}
 	
@@ -47,7 +47,7 @@ public class Basic extends Extent {
 		System.setProperty("webdriver.gecko.driver",
 				System.getProperty("user.dir") + "/Dependencies/Driver/geckodriver.exe");
 		driver = new FirefoxDriver();
-		driver.get("http://qa71.contus.us/services/SVEP4154/code/public/login");
+		driver.get("Project URL");
 		driver.manage().window().maximize();
 	}
 	
@@ -55,7 +55,7 @@ public class Basic extends Extent {
 		System.setProperty("webdriver.edge.driver",
 				System.getProperty("user.dir") + "/Dependencies/Driver/msedgedriver.exe");
 		driver = new EdgeDriver();
-		driver.get("http://qa71.contus.us/services/SVEP4154/code/public/login");
+		driver.get("Project URL");
 		driver.manage().window().maximize();
 	}
 	
